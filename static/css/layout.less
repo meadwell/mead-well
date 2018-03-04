@@ -1,9 +1,12 @@
+@import "variables";
 html, body {
     margin: 0;
     padding: 0;
     font-family: "Roboto", sans-serif;
     font-size: 16px;
     line-height: 1.6em;
+    display: flex;
+    flex-direction: column;
 }
 
 .wrapper {
@@ -12,3 +15,61 @@ html, body {
     margin: 0 auto;
 }
 
+.header {
+    background-color: @color-primary;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 60px;
+
+    .nav--primary {
+        margin: 0 30px 0 30px;
+        flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis: auto;
+        display: flex;
+        justify-content: space-between;
+        align-self: center;
+
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+
+            li {
+                display: inline-block;
+                margin: 0 10px 0 0;
+
+                a {
+                    text-decoration: none;
+                }
+            }
+
+            &:first-child {
+                background-color: red;
+            }
+
+            &:last-child {
+                background-color: yellow;
+
+                li {
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    .logo {
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin-top: 5px;
+        display: flex;
+
+        img {
+            margin: auto;
+        }
+    }
+}
