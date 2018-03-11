@@ -10,9 +10,9 @@ html, body {
 }
 
 .wrapper {
-    width: 960px;
-    padding: 0 20px;
-    margin: 0 auto;
+    //width: 960px;
+    //padding: 0 20px;
+    //margin: 0 auto;
 }
 
 .header {
@@ -20,7 +20,11 @@ html, body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    height: 60px;
+    height: 65px;
+    background-color: #DDDFD6;
+    position: fixed;
+    width: 100vw;
+    z-index: 2;
 
     .nav--primary {
         margin: 0 30px 0 30px;
@@ -36,6 +40,13 @@ html, body {
             padding: 0;
             list-style: none;
 
+            a {
+                all: unset;
+                color: @gray-1;
+                font-size: 18px;
+                letter-spacing: 1px;
+            }
+
             li {
                 display: inline-block;
                 margin: 0 10px 0 0;
@@ -46,11 +57,11 @@ html, body {
             }
 
             &:first-child {
-                background-color: red;
+                //background-color: red;
             }
 
             &:last-child {
-                background-color: yellow;
+                //background-color: yellow;
 
                 li {
                     &:last-child {
@@ -65,7 +76,7 @@ html, body {
         position: absolute;
         left: 0;
         right: 0;
-        margin-top: 5px;
+        margin-top: 10px;
         display: flex;
 
         img {
@@ -73,3 +84,5 @@ html, body {
         }
     }
 }
+
+
