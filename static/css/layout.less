@@ -2,7 +2,7 @@
 html, body {
     margin: 0;
     padding: 0;
-    font-family: "Roboto", sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     line-height: 1.6em;
     display: flex;
@@ -16,15 +16,18 @@ html, body {
 }
 
 .header {
-    background-color: @color-primary;
+    //background-color: @color-primary;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    height: 65px;
-    background-color: #DDDFD6;
+    height: 60px;
+    background-color: #FFFFFF;
+    //background-color: #9B7376;
+
     position: fixed;
     width: 100vw;
     z-index: 2;
+    border-bottom: #F2F4F6 solid 1px;
 
     .nav--primary {
         margin: 0 30px 0 30px;
@@ -42,8 +45,11 @@ html, body {
 
             a {
                 all: unset;
-                color: @gray-1;
-                font-size: 18px;
+                //color: @gray-1;
+                color: #2C1E1E;
+                //color: #342828; nice dark color
+                font-size: 16px;
+                font-weight: bold;
                 letter-spacing: 1px;
             }
 
