@@ -16,18 +16,21 @@ html, body {
 }
 
 .header {
-    //background-color: @color-primary;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     height: 60px;
-    background-color: #FFFFFF;
-    //background-color: #9B7376;
-
+    background-color: #DDDFD6;
     position: fixed;
     width: 100vw;
     z-index: 2;
-    border-bottom: #F2F4F6 solid 1px;
+    transition: background-color 0.75s ease;
+
+    &.white {
+        background-color: #FFFFFF;
+        transition: background-color 0.5s ease;
+        border-bottom: #DDDFD6 solid 1px;
+    }
 
     .nav--primary {
         margin: 0 30px 0 30px;
