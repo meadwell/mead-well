@@ -26,6 +26,7 @@
                     color: #362c55;
                     text-align: left;
                     margin: 0;
+                    grid-template-columns: 1fr 1fr;
                 }
 
                 p {
@@ -102,6 +103,35 @@
 
         img {
             max-width: 100%;
+        }
+    }
+
+    .section--product-list {
+        text-align: center;
+        background-color: #DDDFD6;
+
+        .wrapper {
+            padding: 100px;
+        }
+
+        .product-list--container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 25px;
+            margin: 30px;
+        }
+
+        .product-item {
+            width: 300px;
+            boarder: 2px solid salmon;
+
+            img {
+                width: 100%;
+            }
+
+            button {
+                text-align: center;
+            }
         }
     }
 }
