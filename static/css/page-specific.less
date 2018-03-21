@@ -64,7 +64,6 @@
         grid-template-columns: 1fr 1fr;
 
         .about-us--wrapper {
-            z-index: 4;
             text-align: center;
             display: flex;
             flex-direction: column;
@@ -75,11 +74,13 @@
             .about-us--content {
                 padding: 0 100px;
                 text-align: center;
+                z-index: 2;
             }
 
             h2 {
                 color: #3f3633;
                 text-align: center;
+                margin-top: 30px;
             }
 
             p {
@@ -87,22 +88,24 @@
                 text-align: left;
                 color: #5B4E4A;
                 margin: 22px 0 40px 0;
+                z-index: 3;
             }
 
             button {
-                    text-align: center;
-                    height: 50px;
-                    width: 160px;
-                    background-color: #F0D36C;
-                    color: #3D315F;
-                    text-transform: uppercase;
-                    font-weight: bold;
-                    letter-spacing: 1px;
+                text-align: center;
+                height: 50px;
+                width: 160px;
+                background-color: #F0D36C;
+                color: #3D315F;
+                text-transform: uppercase;
+                font-weight: bold;
+                letter-spacing: 1px;
             }
         }
 
         img {
-            max-width: 100%;
+            max-width: 120%;
+            z-index: 1;
         }
     }
 
@@ -127,6 +130,7 @@
 
             img {
                 width: 100%;
+
             }
 
             button {
