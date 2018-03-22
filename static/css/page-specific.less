@@ -1,18 +1,25 @@
 #page--index {
     .hero {
+        padding-top: 60px;
         display: grid;
         grid-template-columns: 1fr 1fr;
-        min-height:calc(100vh - 60px);
-        margin-top: 60px;
+        //min-height:calc(100vh - 60px);
+        //margin-top: 60px;
         background-color: #DDDFD6;
+        max-width: 1440px;
+        width: 100%;
+        margin: 0 auto;
 
-        .wrapper {
+        .hero-content-wrapper {
             z-index: 4;
             //text-align: center;
-            margin-top: -200px;
+            //margin-top: -200px;
             display: flex;
             align-items: center;
             justify-content: center;
+            //max-width: 100%;
+            //background: red;
+            min-height: 745px;
 
             .content {
                 padding: 0 100px;
@@ -50,12 +57,20 @@
             }
         }
 
-        img {
-            position: absolute;
-            right: 0;
-            bottom: 0;
-            max-width: 65%;
-            max-height: 100%;
+        .hero-image-wrapper {
+            position: relative;
+            width: 100%;
+
+
+            img {
+                position: absolute;
+                //top: 0;
+                //left: 0;
+                bottom: 0;
+                right: 0;
+                max-width: 140%;
+                z-index: 1;
+            }
         }
     }
 
@@ -104,6 +119,7 @@
         }
 
         img {
+            direction: rtl;
             max-width: 120%;
             z-index: 1;
         }

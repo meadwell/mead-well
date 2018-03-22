@@ -10,21 +10,25 @@ html, body {
 }
 
 .wrapper {
-    //width: 960px;
-    //padding: 0 20px;
-    //margin: 0 auto;
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 161px 1fr;
+    background-color: salmon;
 }
 
 .header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    //display: grid;
+    //flex-direction: row;
+    //justify-content: space-between;
     height: 60px;
     background-color: #DDDFD6;
     position: fixed;
     width: 100vw;
     z-index: 10;
     transition: background-color 0.75s ease;
+
 
     &.white {
         background-color: #FFFFFF;
@@ -64,34 +68,61 @@ html, body {
                     text-decoration: none;
                 }
             }
+        }
+    }
 
-            &:first-child {
-                //background-color: red;
+    .nav--secondary {
+        margin: 0 30px 0 30px;
+        flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis: auto;
+        display: flex;
+        justify-content: flex-end;
+        align-self: center;
+
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+
+            a {
+                all: unset;
+                //color: @gray-1;
+                color: #2C1E1E;
+                //color: #342828; nice dark color
+                font-size: 16px;
+                font-weight: bold;
+                letter-spacing: 1px;
             }
 
-            &:last-child {
-                //background-color: yellow;
+            li {
+                display: inline-block;
+                margin: 0 10px 0 0;
 
-                li {
-                    &:last-child {
-                        margin-right: 0;
-                    }
+                a {
+                    text-decoration: none;
                 }
             }
         }
     }
 
-    .logo {
-        position: absolute;
-        left: 0;
-        right: 0;
-        margin-top: 10px;
-        display: flex;
-
-        img {
-            margin: auto;
-        }
+    a {
+        height: 60px;
     }
+    img {
+        margin: 10px 0;
+    }
+    //.logo {
+    //    position: absolute;
+    //    left: 0;
+    //    right: 0;
+    //    margin-top: 10px;
+    //    display: flex;
+    //
+    //    img {
+    //        margin: auto;
+    //    }
+    //}
 }
 
 
