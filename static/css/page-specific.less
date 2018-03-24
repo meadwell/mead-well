@@ -1,39 +1,31 @@
-#page--index {
+.section--hero {
+    background-color: #DDDFD6;
+    z-index: 2;
+
     .hero {
-        padding-top: 60px;
         display: grid;
         grid-template-columns: 1fr 1fr;
-        //min-height:calc(100vh - 60px);
-        //margin-top: 60px;
-        background-color: #DDDFD6;
-        max-width: 1440px;
         width: 100%;
+        max-width: 1440px;
         margin: 0 auto;
+        padding-top: 60px;
 
-        .hero-content-wrapper {
-            z-index: 4;
-            //text-align: center;
-            //margin-top: -200px;
+        .hero--content {
             display: flex;
             align-items: center;
             justify-content: center;
-            //max-width: 100%;
-            //background: red;
-            min-height: 745px;
+            height: 745px;
+            z-index: 4;
 
-            .content {
-                padding: 0 100px;
+            .wrapper {
+                padding: 0 100px 0 80px;
 
                 h1 {
                     font-size: 48px;
                     line-height: 1.2;
-                    //color: #271A48;
-                    //color: #271A48; dark violet
-                    //color: #0F0925;
                     color: #362c55;
                     text-align: left;
                     margin: 0;
-                    grid-template-columns: 1fr 1fr;
                 }
 
                 p {
@@ -43,29 +35,15 @@
                     margin: 32px 0 40px 0;
                     text-align: left;
                 }
-
-                button {
-                    height: 50px;
-                    width: 160px;
-                    background-color: #F0D36C;
-                    color: #3D315F;
-                    text-transform: uppercase;
-                    font-weight: bold;
-                    letter-spacing: 1px;
-                }
-
             }
         }
 
-        .hero-image-wrapper {
+        .hero--image {
             position: relative;
             width: 100%;
 
-
             img {
                 position: absolute;
-                //top: 0;
-                //left: 0;
                 bottom: 0;
                 right: 0;
                 max-width: 140%;
@@ -74,22 +52,55 @@
         }
     }
 
-    .section--about-us {
+    @media (max-width: 1280px) {
+        .hero {
+            .hero--content {
+                height: 645px;
+
+                .wrapper {
+                    padding: 0 100px 0 30px;
+                }
+            }
+        }
+    }
+
+    @media (max-width: 1068px) {
+        .hero {
+            .hero--content {
+                height: 545px;
+            }
+        }
+
+    }
+
+    @media (max-width: 1024px) {
+
+    }
+
+    @media (max-width: 1008px) {
+
+    }
+}
+
+.section--about-us {
+    background-color: #fbf8f8;
+
+    .about-us {
         display: grid;
         grid-template-columns: 1fr 1fr;
+        max-width: 1440px;
+        width: 100%;
+        margin: 0 auto;
 
-        .about-us--wrapper {
-            text-align: center;
+        .about-us--content {
+            z-index: 2;
             display: flex;
-            flex-direction: column;
             align-items: center;
             justify-content: center;
-            background-color: #fbf8f8;
 
-            .about-us--content {
-                padding: 0 100px;
+            .wrapper {
+                padding: 60px 80px 60px 80px;
                 text-align: center;
-                z-index: 2;
             }
 
             h2 {
@@ -105,25 +116,33 @@
                 margin: 22px 0 40px 0;
                 z-index: 3;
             }
+        }
 
-            button {
-                text-align: center;
-                height: 50px;
-                width: 160px;
-                background-color: #F0D36C;
-                color: #3D315F;
-                text-transform: uppercase;
-                font-weight: bold;
-                letter-spacing: 1px;
+        .about-us--image {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            img {
+                width: 120%;
+                z-index: 1;
             }
         }
+    }
 
-        img {
-            direction: rtl;
-            max-width: 120%;
-            z-index: 1;
+    @media (max-width: 1280px) {
+        .about-us {
+            .about-us--content {
+                .wrapper {
+                    padding: 60px 40px 60px 80px;
+                }
+            }
         }
     }
+}
+
+#page--index {
 
     .section--product-list {
         text-align: center;
