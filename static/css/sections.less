@@ -1,8 +1,15 @@
 @import "variables";
 
+
+.section {
+    padding: 60px 0;
+    box-sizing: border-box;
+}
+
 .section--hero {
     background-color: #DDDFD6;
     z-index: 2;
+    padding: 0;
 
     .hero {
         display: grid;
@@ -86,6 +93,7 @@
 
 .section--about-us {
     background-color: #fbf8f8;
+    padding: 0;
 
     .about-us {
         display: grid;
@@ -202,8 +210,59 @@
     }
 }
 
+.section--newsletter {
+    background-color: #DDDFD6;
+    padding: 0;
+
+    .newsletter {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 100%;
+        max-width: 1440px;
+        margin: 0 auto;
+
+
+        .newsletter--content {
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 760px;
+        }
+
+        .newsletter--image {
+            position: relative;
+            width: 100%;
+
+            img {
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                max-width: 120%;
+                z-index: 1;
+            }
+        }
+    }
+
+    input[type="email"] {
+        width: 200px;
+        height: 32px;
+        border: 0;
+        border-radius: 2px;
+        padding: 8px 12px;
+        box-shadow: 0 0 2px 0 darken(#292C44, 20%);
+        background: #e3e0df;
+    }
+
+}
+
 .section--placeholder {
     background-color: #DDDFD6;
+    height: 500px;
+}
+
+.section--placeholder-white {
+    background-color: white;
     height: 500px;
 }
 
