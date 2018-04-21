@@ -59,35 +59,6 @@
         }
     }
 
-    //@media (max-width: 1280px) {
-    //    .hero {
-    //        .hero--content {
-    //            height: 645px;
-    //
-    //            .wrapper {
-    //                padding: 0 100px 0 30px;
-    //            }
-    //        }
-    //    }
-    //}
-    //
-    //@media (max-width: 1068px) {
-    //    .hero {
-    //        .hero--content {
-    //            height: 545px;
-    //        }
-    //    }
-    //
-    //}
-    //
-    //@media (max-width: 1024px) {
-    //
-    //}
-    //
-    //@media (max-width: 1008px) {
-    //
-    //}
-
     @media (max-width: 1068px) {
         .hero {
             display: block;
@@ -179,7 +150,7 @@
 
 
             img {
-                width: 110%;
+                width: 100%;
                 z-index: 1;
             }
         }
@@ -210,7 +181,7 @@
                  }
              }
          }
-     }
+    }
 }
 
 .section--product-list {
@@ -313,43 +284,60 @@
     padding: 0;
 
     .newsletter {
-        display: grid;
-        grid-template-columns: 40% 60%;
-        width: 100%;
+        display: flex;
+        flex-direction: row;
         max-width: 1440px;
+        width: 100%;
         margin: 0 auto;
+        padding: 50px 0;
 
 
         .newsletter--content {
-            text-align: center;
+            z-index: 2;
+            flex: 0 1 40%;
             display: flex;
             align-items: center;
             justify-content: center;
-            height: 760px;
+
+            .wrapper {
+                margin: 40px 40px 60px 40px;
+                text-align: center;
+            }
         }
 
         .newsletter--image {
-            position: relative;
-            width: 100%;
+            flex: 0 1 60%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
 
             img {
-                position: absolute;
-                bottom: 0;
-                right: 0;
-                max-width: 100%;
+                width: 100%;
                 z-index: 1;
             }
         }
     }
 
-    input[type="email"] {
-        width: 200px;
-        height: 32px;
-        border: 0;
-        border-radius: 2px;
-        padding: 8px 12px;
-        box-shadow: 0 0 2px 0 darken(#292C44, 20%);
-        background: #e3e0df;
+    @media (max-width: 1068px) {
+        .newsletter {
+            display: block;
+            padding: 0px;
+        }
+    }
+
+    @media (max-width: @width-mobile) {
+         .newsletter {
+             .newsletter--content {
+                 .wrapper {
+                     margin: 40px 20px 30px 40px;
+
+                     h2 {
+                         font-size: 48px;
+                     }
+                 }
+             }
+         }
     }
 
 }
