@@ -2,14 +2,12 @@
 
 
 .section {
-    padding: 60px 0;
     box-sizing: border-box;
 }
 
 .section--hero {
     background-color: #DDDFD6;
     z-index: 2;
-    padding: 0;
 
     .hero {
         display: flex;
@@ -105,7 +103,6 @@
 
 .section--about-us {
     background-color: #fbf8f8;
-    padding: 0;
 
     .about-us {
         display: flex;
@@ -173,7 +170,7 @@
          .about-us {
              .about-us--content {
                  .wrapper {
-                     margin: 40px 20px 30px 40px;
+                     margin: 0px 20px 30px 40px;
 
                      h2 {
                          font-size: 48px;
@@ -186,13 +183,11 @@
 
 .section--product-list {
     text-align: center;
-    //background-color: #f2f4f6;
-    padding: 0;
 
     .wrapper {
         max-width: 1440px;
         margin: 0 auto;
-        padding: 60px 20px;
+        padding: 40px 20px;
     }
 
     .product-container {
@@ -253,7 +248,7 @@
 
     @media (max-width: @width-tablet) {
         .wrapper {
-            padding: 0 50px;
+            padding: 20px 50px;
         }
 
         .product-container {
@@ -267,10 +262,10 @@
         }
     }
 
-     @media (max-width: @width-mobile) {
+    @media (max-width: @width-mobile) {
          .wrapper {
              min-width: 320px;
-             padding: 0 20px;
+             padding: 20px;
          }
 
         .product-item {
@@ -279,9 +274,89 @@
     }
 }
 
+.section--visit-us {
+    background-color: white;
+
+    .visit-us {
+        display: flex;
+        flex-direction: row-reverse;
+        max-width: 750px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 50px 0;
+
+        .visit-us--content {
+            z-index: 2;
+            flex: 0 1 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+
+            .wrapper {
+                margin: 40px;
+            }
+
+
+            h2 {
+                color: #3f3633;
+                //text-align: center;
+                margin-top: 30px;
+            }
+
+            h3 {
+                margin-bottom: 0;
+                margin-top: 0;
+            }
+
+            p {
+
+                color: #5B4E4A;
+                margin: 22px 0 40px 0;
+                z-index: 3;
+            }
+        }
+
+        .visit-us--image {
+            flex: 0 1 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+
+            img {
+                width: 100%;
+                z-index: 1;
+            }
+        }
+    }
+
+    @media (max-width: @width-tablet) {
+        .visit-us {
+            display: block;
+            padding: 0px;
+
+            .visit-us--image {
+                img {
+                    width: 65%;
+                }
+            }
+        }
+    }
+
+    @media (max-width: @width-mobile) {
+         .visit-us {
+             .visit-us--image {
+                img {
+                    width: 100%;
+                }
+            }
+         }
+    }
+}
+
 .section--newsletter {
     background-color: white;
-    padding: 0;
 
     .newsletter {
         display: flex;
@@ -289,7 +364,7 @@
         max-width: 1440px;
         width: 100%;
         margin: 0 auto;
-        padding: 50px 0;
+        padding: 40px 0;
 
 
         .newsletter--content {
