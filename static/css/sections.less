@@ -6,7 +6,7 @@
 }
 
 .section--hero {
-    background-color: #DDDFD6;
+    background-color: #EFEFE9;
     z-index: 2;
 
     .hero {
@@ -31,14 +31,18 @@
                 h2 {
                     text-align: center;
                     margin: 0;
+
+                    //font-size: 60px;
+                    line-height: 1.2;
+                    //text-transform: uppercase;
                 }
 
                 p {
-                    font-size: 22px;
+                    font-size: 18px;
                     line-height: 1.5;
                     color: #5B4E4A;
                     margin: 32px 0 40px 0;
-                    text-align: left;
+                    text-align: center;
                 }
             }
         }
@@ -48,11 +52,42 @@
             display: flex;
             align-items: center;
             justify-content: flex-end;
-            background-color: white;
+            position: relative;
 
             img {
-                width: 120%;
+                width: 100%;
                 z-index: 1;
+            }
+
+            @keyframes moveLeftToRight {
+                0% {
+                    transform: translateX(0);
+                }
+                25% {
+                    transform: translateX(-15%);
+                }
+                50% {
+                    transform: translateX(0%);
+                }
+                75% {
+                    transform: translateX(15%);
+                }
+                100% {
+                    transform: translateX(0%);
+                }
+            }
+
+            .cloud-container {
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                animation: 100s ease-in-out 1s 10 moveLeftToRight;
+
+                img {
+                    width: 100%;
+                }
             }
         }
     }
@@ -109,7 +144,7 @@
         flex-direction: row-reverse;
         max-width: 1440px;
         width: 100%;
-        margin: 0 auto;
+        margin: 50px auto;
         padding: 20px 0 0 0;
 
         .about-us--content {
@@ -121,7 +156,7 @@
 
             .wrapper {
                 //margin: auto 0;
-                margin: 40px 40px 60px 40px;
+                margin: 0px 40px 60px 40px;
                 text-align: center;
             }
 
@@ -183,6 +218,7 @@
 
 .section--product-list {
     text-align: center;
+    background-color: #f0f0eb;
 
     .wrapper {
         max-width: 1440px;
@@ -238,27 +274,6 @@
         }
     }
 
-    h2 {
-        color: #3f3633;
-        font-family: 'Cantata One', serif;
-
-    }
-
-    .type2 {
-        font-family: 'Rufina', serif;
-    }
-
-    .type3 {
-        font-family: 'Lusitana', serif;
-    }
-
-    .type4 {
-        font-family: 'Radley', serif
-    }
-
-    .type5 {
-        font-family: 'Ovo', serif;
-    }
     button {
         width: 200px
     }
