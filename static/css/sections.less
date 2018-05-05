@@ -305,6 +305,9 @@
         border-top: 1px solid #DFE3E6;
         background: white;
         box-shadow: 0px 2px 1px #ddd, 0 5px 20px #ccc;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
 
         img {
             width: 90%;
@@ -312,30 +315,15 @@
         }
 
         h4 {
-            margin: 10px 0;
-            padding: 0 10px;
+            margin: 0;
+            padding: 15px 10px 10px 10px;
+            color: black;
+            font-size: 20px;
         }
 
-        div {
-            padding: 20px;
-        }
-    }
-
-    .product-item--1 {
-        h4 {
-            color: #020B3C;
-        }
-    }
-
-    .product-item--2 {
-        h4 {
-            color: #83410D;
-        }
-    }
-
-    .product-item--3 {
-        h4 {
-            color: #7D0C09;
+        .product-item--description {
+            font-size: 14px;
+            padding: 5px 10px 20px 10px;
         }
     }
 
@@ -647,3 +635,8 @@
     }
 }
 
+#product-list {
+    .section--product-list {
+        padding-top: 60px;
+    }
+}
