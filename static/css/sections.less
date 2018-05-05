@@ -55,34 +55,101 @@
                 z-index: 1;
             }
 
+            .animation-container {
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            .animation-container--clouds {
+                animation: 100s ease-in-out 1s 1000 moveLeftToRight;
+            }
+
+            .animation-container--aircraft {
+                animation: 40s linear 3s 1000 moveUpAndDown;
+            }
+
+            .animation-container--balloon-blue {
+                animation: 40s linear 3s 1000 moveDownAndUp;
+            }
+
+            .animation-container--balloon-red {
+                animation: 50s linear 3s 1000 diving;
+            }
+
             @keyframes moveLeftToRight {
                 0% {
                     transform: translateX(0);
                 }
                 25% {
-                    transform: translateX(-15%);
+                    transform: translateX(-10%);
                 }
                 50% {
                     transform: translateX(0%);
                 }
                 75% {
-                    transform: translateX(15%);
+                    transform: translateX(10%);
                 }
                 100% {
                     transform: translateX(0%);
                 }
             }
 
-            .cloud-container {
-                position: absolute;
-                left: 0;
-                right: 0;
-                top: 0;
-                bottom: 0;
-                animation: 100s ease-in-out 1s 10 moveLeftToRight;
+            @keyframes diving {
+                0% {
+                     transform:rotate(0deg);
+                }
+                25% {
+                     transform:rotate(3deg);
+                }
 
-                img {
-                    width: 100%;
+                75% {
+                    transform:rotate(-3deg);
+                }
+                100% {
+                    transform:rotate(0deg);
+                }
+            }
+
+            @keyframes moveUpAndDown {
+                0% {
+                    transform: translateY(0);
+                }
+                25% {
+                    transform: translateY(-3%);
+                }
+                50% {
+                    transform: translateY(0%);
+                }
+                75% {
+                    transform: translateY(-3%);
+                }
+                100% {
+                    transform: translateY(0%);
+                }
+            }
+
+            @keyframes moveDownAndUp {
+                0% {
+                    transform: translateY(0);
+                }
+                25% {
+                    transform: translateY(3%);
+                }
+                50% {
+                    transform: translateY(0%);
+                }
+                75% {
+                    transform: translateY(3%);
+                }
+                100% {
+                    transform: translateY(0%);
                 }
             }
         }
