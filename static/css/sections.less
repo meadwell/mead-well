@@ -239,12 +239,122 @@
             flex: 0 1 50%;
             display: flex;
             align-items: center;
-            justify-content: center;
-
+            justify-content: flex-end;
+            position: relative;
 
             img {
                 width: 100%;
                 z-index: 1;
+            }
+
+            .animation-container {
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            .animation-container--gear-one {
+                img {
+                    width: 6.5%;
+                    margin-top: 56%;
+                    margin-left: 26.5%;
+                }
+            }
+
+            .animation-container--gear-two {
+                img {
+                    width: 6%;
+                    margin-top: 57%;
+                    margin-left: 16%;
+                }
+            }
+
+            .animation-container--apple {
+
+            }
+
+            .animation-container--bell {
+
+            }
+
+            .animation-container--kite {
+
+            }
+
+            @keyframes moveLeftToRight {
+                0% {
+                    transform: translateX(0);
+                }
+                25% {
+                    transform: translateX(-10%);
+                }
+                50% {
+                    transform: translateX(0%);
+                }
+                75% {
+                    transform: translateX(10%);
+                }
+                100% {
+                    transform: translateX(0%);
+                }
+            }
+
+            @keyframes diving {
+                0% {
+                     transform:rotate(0deg);
+                }
+                25% {
+                     transform:rotate(3deg);
+                }
+
+                75% {
+                    transform:rotate(-3deg);
+                }
+                100% {
+                    transform:rotate(0deg);
+                }
+            }
+
+            @keyframes moveUpAndDown {
+                0% {
+                    transform: translateY(0);
+                }
+                25% {
+                    transform: translateY(-3%);
+                }
+                50% {
+                    transform: translateY(0%);
+                }
+                75% {
+                    transform: translateY(-3%);
+                }
+                100% {
+                    transform: translateY(0%);
+                }
+            }
+
+            @keyframes moveDownAndUp {
+                0% {
+                    transform: translateY(0);
+                }
+                25% {
+                    transform: translateY(3%);
+                }
+                50% {
+                    transform: translateY(0%);
+                }
+                75% {
+                    transform: translateY(3%);
+                }
+                100% {
+                    transform: translateY(0%);
+                }
             }
         }
     }
