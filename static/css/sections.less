@@ -242,6 +242,10 @@
             justify-content: flex-end;
             position: relative;
 
+            .about-us--image-container {
+                position: relative;
+            }
+
             img {
                 width: 100%;
                 z-index: 1;
@@ -261,26 +265,34 @@
 
             .animation-container--gear-one {
                 img {
-                    width: 6.5%;
-                    margin-top: 56%;
-                    margin-left: 26.5%;
+                    width: 6%;
+                    margin-top: 57%;
+                    margin-left: 16%;
+                    animation: 4s ease-in-out 1s 1000 infinite-spinning;
                 }
             }
 
             .animation-container--gear-two {
                 img {
-                    width: 6%;
-                    margin-top: 57%;
-                    margin-left: 16%;
+                    width: 6.5%;
+                    margin-top: 56%;
+                    margin-left: 26.5%;
+                    animation: 4s ease-in-out 1.1s 1000 infinite-spinning;
                 }
             }
 
             .animation-container--apple {
-
+                img {
+                    animation: 16s ease-in-out 1s 1000 moveUpAndDown;
+                }
             }
 
             .animation-container--bell {
-
+                img {
+                    width: 15%;
+                    margin-top: 51.5%;
+                    margin-left: 84.5%;
+                }
             }
 
             .animation-container--kite {
@@ -321,24 +333,6 @@
                 }
             }
 
-            @keyframes moveUpAndDown {
-                0% {
-                    transform: translateY(0);
-                }
-                25% {
-                    transform: translateY(-3%);
-                }
-                50% {
-                    transform: translateY(0%);
-                }
-                75% {
-                    transform: translateY(-3%);
-                }
-                100% {
-                    transform: translateY(0%);
-                }
-            }
-
             @keyframes moveDownAndUp {
                 0% {
                     transform: translateY(0);
@@ -351,6 +345,33 @@
                 }
                 75% {
                     transform: translateY(3%);
+                }
+                100% {
+                    transform: translateY(0%);
+                }
+            }
+
+            @keyframes infinite-spinning {
+                from {
+                    transform: rotate(0deg);
+                }
+                to {
+                    transform: rotate(360deg);
+                }
+            }
+
+            @keyframes moveUpAndDown {
+                0% {
+                    transform: translateY(0);
+                }
+                25% {
+                    transform: translateY(2%);
+                }
+                50% {
+                    transform: translateY(0%);
+                }
+                75% {
+                    transform: translateY(2%);
                 }
                 100% {
                     transform: translateY(0%);
