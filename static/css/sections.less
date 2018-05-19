@@ -422,10 +422,6 @@
         }
     }
 
-    button {
-        width: 200px
-    }
-
     @media (max-width: 910px) {
         .product-item {
             h4 {
@@ -590,6 +586,12 @@
         }
     }
 
+    .button {
+        &:hover {
+            background-color: #F0D36C;
+        }
+    }
+
     @media (max-width: @width-tablet) {
         .newsletter {
             display: block;
@@ -612,11 +614,6 @@
             }
          }
     }
-}
-
-.section--placeholder {
-    background-color: #DDDFD6;
-    height: 500px;
 }
 
 .section--carousel {
