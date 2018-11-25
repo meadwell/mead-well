@@ -15,8 +15,7 @@
     <script type="text/javascript" src="static/js/scripts.js"></script>
 </head>
 
-<body>
-
+<body id="index">
     <header class="header" data-header>
         <div class="wrapper">
             <nav class="nav--primary">
@@ -32,7 +31,7 @@
             <nav class="nav--secondary">
                 <ul>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Cart</a>
+                        <!--<a class="nav-link" href="#">Cart</a>-->
                     </li>
                 </ul>
             </nav>
@@ -196,6 +195,16 @@
             </div>
         </div>
     </section>
+
+    <!-- VinoShipper Wine List Integration -->
+        <div id="vs-winelist"></div>
+        <script type="text/javascript">
+            var vsDisableResize = false;
+            var vsCssUrl = "";
+            var vsWineryId = 1890;
+        </script>
+        <script src="https://vinoshipper.com/iframe/v3/injector.js"></script>
+    <!-- End VinoShipper Wine List Integration  -->
 
     <footer>
         <div class="footer--social">
