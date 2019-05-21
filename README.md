@@ -15,9 +15,11 @@ $ http-server
 
 Visit http://localhost:8080.
 
-## Deployment
+## Deployment as S3 Bucket (option 1)
 
-Install Nginx on Ubuntu server
+Upload files to AWS S3 Bucket. Enable static webiste hosting. 
+
+## Deployment to Ubuntu server (option 2)
 
 Clone repo to home directory
 
