@@ -7,6 +7,7 @@
 
         <title>Mead Well</title>
 
+        <link rel="stylesheet" type="text/less" href="static/css/style.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cinzel|Roboto|Open+Sans|Lato">
         <link rel="stylesheet" type="text/less" href="static/css/normalize.css">
         <link rel="stylesheet" type="text/less" href="static/css/layout.less">
@@ -27,27 +28,41 @@
     </head>
 
     <body id="index">
-        <header class="header" data-header>
-            <div class="wrapper">
-                <nav class="nav--primary">
-                    <ul>
-                        <li class="nav-item">
-                            <a class="nav-link" href="store.html">Store</a>
-                        </li>
-                    </ul>
-                </nav>
-                <a class="logo" href="/">
+
+        <nav class="navbar navbar-expand-md sticky-top navbar-light bg-light">
+
+            <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Mead</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Visit</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="mx-auto order-0">
+                <a class="logo navbar-brand mx-auto" href="/">
                     <img src="static/images/logo.png" height=40 alt="">
                 </a>
-                <nav class="nav--secondary">
-                    <ul>
-                        <li class="nav-item">
-                            <!--<a class="nav-link" href="#">Cart</a>-->
-                        </li>
-                    </ul>
-                </nav>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
             </div>
-        </header>
+
+            <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Where to Find Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Events</a>
+                    </li>
+                </ul>
+            </div>
+
+        </nav>
 
         <section class="section section--hero">
             <div class="hero">
@@ -55,7 +70,7 @@
                     <div class="wrapper">
                         <h2>First Meadery in Philadelphia</h2>
                         <p>A tavern was built at the site, and the honey was transformed into a rich, golden mead that delighted everyone who drank it</p>
-                        <a href="/store.html" class="button">shop mead</a>
+                        <a href="/mead.html" class="button">shop mead</a>
                     </div>
                 </div>
                 <div class="hero--image">
@@ -136,7 +151,7 @@
                         <div class="product-item--description">mead with pomegranate</div>
                     </div>
                 </div>
-                <a href="/store.html" class="button">See all products</a>
+                <a href="/mead.html" class="button">See all products</a>
             </div>
         </section>
 
