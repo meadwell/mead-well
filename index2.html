@@ -15,6 +15,9 @@
         <link rel="stylesheet" type="text/less" href="static/css/sections.less">
         <link rel="stylesheet" type="text/less" href="static/css/page-specific.less">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+
+        <script type="text/javascript" src="static/js/less.min.js"></script>
+        <script type="text/javascript" src="static/js/scripts.js"></script>
         
         <!-- Bootstrap CSS and JS dependencies -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -23,8 +26,20 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
         <!-- End Bootstrap CSS and JS dependencies -->
 
-        <script type="text/javascript" src="static/js/less.min.js"></script>
-        <script type="text/javascript" src="static/js/scripts.js"></script>
+        <!-- Age Verification dependencies -->
+        <script src="jquery.min.js"></script>
+        <link rel="stylesheet" href="dist/agecheck.min.css">
+        <script src="dist/jquery.agecheck-min.js"></script>
+        <!-- End Age Verification dependencies -->
+
+        <!-- Perform Age Verification -->
+        <script>
+            $(document).ready(function() {
+                $.ageCheck()
+            })
+        </script>
+        <!-- End Perform Age Verification -->
+
     </head>
 
     <body id="index">
@@ -34,17 +49,17 @@
 
             <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
                 <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Mead</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="mead.html">Mead</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Visit</a>
+                        <a class="nav-link" href="visit.html">Visit</a>
                     </li>
                 </ul>
             </div>
 
             <div class="mx-auto order-0">
-                <a class="logo navbar-brand mx-auto" href="/">
+                <a class="logo navbar-brand mx-auto" href="index2.html">
                     <img src="static/images/logo.png" height=40 alt="">
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
@@ -55,10 +70,10 @@
             <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Where to Find Us</a>
+                        <a class="nav-link" href="find-us.html">Where to Find Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Events</a>
+                        <a class="nav-link" href="events.html">Events</a>
                     </li>
                 </ul>
             </div>
