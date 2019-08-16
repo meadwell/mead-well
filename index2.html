@@ -28,8 +28,8 @@
 
         <!-- Age Verification dependencies -->
         <script src="jquery.min.js"></script>
-        <link rel="stylesheet" href="dist/agecheck.min.css">
-        <script src="dist/jquery.agecheck-min.js"></script>
+        <link rel="stylesheet" href="src/agecheck.css">
+        <script src="src/jquery.agecheck.js"></script>
         <!-- End Age Verification dependencies -->
 
         <!-- Perform Age Verification -->
@@ -47,33 +47,40 @@
         <!-------- Nav Bar -------->
         <nav class="navbar navbar-expand-md sticky-top navbar-light bg-light">
 
-            <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="mead.html">Mead</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="visit.html">Visit</a>
-                    </li>
-                </ul>
-            </div>
-
             <div class="mx-auto order-0">
-                <a class="logo navbar-brand mx-auto" href="index2.html">
+                <a class="logo navbar-brand ml-0px" href="index2.html">
                     <img src="static/images/logo.png" height=40 alt="">
                 </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
+                <button class="navbar-toggler mr-0px" type="button" data-toggle="collapse" data-target=".dual-collapse2">
                     <span class="navbar-toggler-icon"></span>
                 </button>
             </div>
 
             <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
-                <ul class="navbar-nav ml-auto">
+                <ul class="navbar-nav ml-auto pull-down">
                     <li class="nav-item">
-                        <a class="nav-link" href="find-us.html">Where to Find Us</a>
+                        <a class="nav-link" href="mead.html">MEAD</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="events.html">Events</a>
+                        <a class="nav-link" href="about.html">ABOUT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="visit.html">VISIT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="events.html">EVENTS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">CONTACT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="shop.html">SHOP</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">|</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="prospector-society.html">KEY MOTIF</a>
                     </li>
                 </ul>
             </div>
@@ -206,39 +213,79 @@
         </section>
         <!-------- End Visit Us Section -------->
 
-        <!-------- VinoShipper Wine List Integration -------->
-            <div id="vs-winelist"></div>
-            <script type="text/javascript">
-                var vsDisableResize = false;
-                var vsCssUrl = "";
-                var vsWineryId = 1890;
-            </script>
-            <script src="https://vinoshipper.com/iframe/v3/injector.js"></script>
-        <!-------- End VinoShipper Wine List Integration  -------->
-
-        <!-------- Footer -------->
-        <footer class="page-footer container-fluid font-small blue pt-4 mx-auto">
-            <div class = "row">
-                <div class = "footer--social mx-auto">
-                    <a href="https://www.instagram.com/mead.well/" target="_blank">
-                        <img src="static/images/instagram.png" alt="">
-                    </a>
-
-                    <a href="https://www.facebook.com/Philadelphia-Mead-Well-119688815320259/" target="_blank" style = "padding-left: 15%">
-                        <img src="static/images/facebook.png" alt="">
-                    </a>
-                </div>
-            </div>
-
-            <div class = "row">
-                <div class = "col-12">
-                    <div class="footer-copyright text-center py-3">
-                        © 2019 Philadelphia Mead Well Inc. All Rights Reserved
+        <!-------- Actions Section -------->
+        <section class="section">
+            <div class="container">
+                <div class="row">
+                    <div class = "col-sm footer-banner-links">
+                        <h3>LOCATION</h3>
+                        <br>
+                        3525 I St
+                        <br>
+                        STE #201
+                        <br>
+                        Philadelphia, PA 19134
+                        <br><br>
+                        ### ### ###
+                        <br>
+                        <a href="mailto:hello@phillymead.com">Hello@PhillyMead.com</a>
+                    </div>
+                    <div class="col-sm footer-banner-links">
+                        <h3>MORE</h3>
+                        <br>
+                        <a href = "#">Sell Our Mead</a>
+                        <br>
+                        <a href = "#">Detailed Map</a>
+                        <br>
+                        <a href= "#">Careers</a>
+                        <br>
+                        <a href="#">FAQ</a>
+                    </div>
+                    <div class="col-sm">
+                        <h3>GET SOCIAL</h3>
+                        <br>
+                        <div class="mx-auto">
+                            <a href="https://www.instagram.com/mead.well/" target="_blank">
+                                <img src="static/images/instagram.png" alt="">
+                            </a>
+                        
+                            <a href="https://www.facebook.com/Philadelphia-Mead-Well-119688815320259/" target="_blank"
+                                style="padding-left: 15%">
+                                <img src="static/images/facebook.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-sm">
+                        <h3>KEEP IN TOUCH</h3>
+                        <br>
+                        <input type = "text" placeholder="enter e-mail here">
+                        <br><br>
+                        <button>SIGN UP</button>
                     </div>
                 </div>
             </div>
+        </section>
+        <!-------- End Actions Section -------->
+
+        <br><br>
+
+        <!-------- Footer -------->
+        <footer class="page-footer container-fluid font-small blue pt-4 mx-auto">
+                <div class = "col-12 custom-footer">
+                    © 2019 Philadelphia Mead Well Inc. All Rights Reserved
+                </div>
         </footer>
         <!-------- End Footer -------->
+
+        <!-------- VinoShipper Wine List Integration -------->
+        <div id="vs-winelist"></div>
+        <script type="text/javascript">
+            var vsDisableResize = false;
+            var vsCssUrl = "";
+            var vsWineryId = 1890;
+        </script>
+        <script src="https://vinoshipper.com/iframe/v3/injector.js"></script>
+        <!-------- End VinoShipper Wine List Integration  -------->
 
     </body>
 </html>
