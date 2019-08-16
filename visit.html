@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="Mead Well">
+
+        <title>Visit the Mead Well</title>
+
+        <link rel="stylesheet" type="text/less" href="static/css/style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cinzel|Roboto|Open+Sans|Lato">
+        <link rel="stylesheet" type="text/less" href="static/css/normalize.css">
+        <link rel="stylesheet" type="text/less" href="static/css/layout.less">
+        <link rel="stylesheet" type="text/less" href="static/css/components.less">
+        <link rel="stylesheet" type="text/less" href="static/css/sections.less">
+        <link rel="stylesheet" type="text/less" href="static/css/sections.css">
+        <link rel="stylesheet" type="text/less" href="static/css/page-specific.less">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+
+        <script type="text/javascript" src="static/js/less.min.js"></script>
+        <script type="text/javascript" src="static/js/scripts.js"></script>
+        
+        <!-- Bootstrap CSS and JS dependencies -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <!-- End Bootstrap CSS and JS dependencies -->
+
+        <!-- Age Verification dependencies -->
+        <script src="jquery.min.js"></script>
+        <link rel="stylesheet" href="dist/agecheck.min.css">
+        <script src="dist/jquery.agecheck-min.js"></script>
+        <!-- End Age Verification dependencies -->
+
+        <!-- Perform Age Verification -->
+        <script>
+            $(document).ready(function() {
+                $.ageCheck()
+            })
+        </script>
+        <!-- End Perform Age Verification -->
+
+    </head>
+
+    <body id="index">
+
+        <!-------- Nav Bar -------->
+        <nav class="navbar navbar-expand-md sticky-top navbar-light bg-light">
+
+            <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="mead.html">Mead</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Visit</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="mx-auto order-0">
+                <a class="logo navbar-brand mx-auto" href="index2.html">
+                    <img src="static/images/logo.png" height=40 alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+
+            <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="find-us.html">Where to Find Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="events.html">Events</a>
+                    </li>
+                </ul>
+            </div>
+
+        </nav>
+        <!-------- End Nav Bar -------->
+
+        <!-------- Header Section -------->
+        <section class="section--hero section--visit-us-header">
+            <div class="hero">
+                <div class="hero--content">
+                    <div class="wrapper">
+                        <h2>Visit Us</h2>
+                        <p>We offer tastings, tours, and more at our storehouse in Philadelphia. Come hang out and try something new!</p>
+                        <a href="https://square.site/book/W83CDG2400C0S/philadelphia-mead-well-philadelphia-pa" class="button center-button">Book a Tour or Tasting</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-------- End Header Section -------->
+
+        <!-------- Visit Us Section -------->
+        <section class="section section--visit-us">
+            <div class="visit-us">
+                <div class="visit-us--content">
+                    <div class="wrapper">
+                        <h3>mead tasting</h3>
+                        <h3>and tours</h3>
+                        <div>Friday</div>
+                        <div>Saturday</div>
+                        <div>Sunday</div>
+                        </br>
+                        <h5>Our address:</h5>
+                        <div>3525 I Street, Unit #201</div>
+                        <div>Philadelphia, PA 19134</div>
+                        <br>
+                        <h5>Phone number:</h5>
+                        <phone>(267) 454-5956</phone></br>
+                        </br>
+                        <h5>Email:</h5>
+                        <email>hello@phillymead.com</email>
+                    </div>
+                </div>
+                <div class="visit-us--image">
+                    <img src="static/images/section-visit-us.png" alt="">
+                </div>
+            </div>
+        </section>
+        <!-------- End Visit Us Section -------->
+
+        <!-------- VinoShipper Wine List Integration -------->
+            <div id="vs-winelist"></div>
+            <script type="text/javascript">
+                var vsDisableResize = false;
+                var vsCssUrl = "";
+                var vsWineryId = 1890;
+            </script>
+            <script src="https://vinoshipper.com/iframe/v3/injector.js"></script>
+        <!-------- End VinoShipper Wine List Integration  -------->
+
+        <!-------- Footer -------->
+        <!-- <footer class="page-footer container-fluid font-small blue pt-4 mx-auto">
+            <div class = "row">
+                <div class = "footer--social mx-auto">
+                    <a href="https://www.instagram.com/mead.well/" target="_blank">
+                        <img src="static/images/instagram.png" alt="">
+                    </a>
+
+                    <a href="https://www.facebook.com/Philadelphia-Mead-Well-119688815320259/" target="_blank" style = "padding-left: 15%">
+                        <img src="static/images/facebook.png" alt="">
+                    </a>
+                </div>
+            </div>
+
+            <div class = "row">
+                <div class = "col-12">
+                    <div class="footer-copyright text-center py-3">
+                        © 2019 Philadelphia Mead Well Inc. All Rights Reserved
+                    </div>
+                </div>
+            </div>
+        </footer> -->
+        <!-------- End Footer -------->
+
+        <footer class="footer container-fluid w-100 bg-light py-3">
+
+            <a href="https://www.instagram.com/mead.well/" target="_blank">
+                <img src="static/images/instagram.png" alt="" class = "pull-left">
+            </a>
+
+            © 2019 Philadelphia Mead Well Inc. All Rights Reserved
+
+            <a href="https://www.facebook.com/Philadelphia-Mead-Well-119688815320259/" target="_blank">
+                <img src="static/images/facebook.png" alt="" class="pull-right">
+            </a>
+        </footer>
+
+    </body>
+</html>
