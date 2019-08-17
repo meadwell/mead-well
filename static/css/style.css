@@ -55,6 +55,11 @@ h2 {
     height: 40px !important;
 }
 
+.footer-banner {
+    background-color: #EFEFE9;
+    text-align: center;
+}
+
 .footer-banner-links a {
     color: black !important;
 }
@@ -68,12 +73,9 @@ h2 {
 input[type=text] {
     width: 100%;
     border: 1px solid lightgray;
-    border-radius: 5px;
-}
-
-button {
-    border: 1px solid lightgray;
-    border-radius: 5px !important;
+    border-radius: 3px;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 button:hover {

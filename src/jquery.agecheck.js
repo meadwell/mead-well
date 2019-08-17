@@ -11,8 +11,8 @@
 (function ($) {
   $.ageCheck = function (options) {
     const settings = $.extend({
-      redirectTo: 'index2.html',
-      redirectOnFail: 'index2.html',
+      redirectTo: 'index.html',
+      redirectOnFail: 'index.html',
       title: 'Age Verification',
       copy: 'Are you at least 21 years of age?',
       success: null,

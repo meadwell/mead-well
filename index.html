@@ -1,12 +1,13 @@
 <!doctype html>
 <html lang="en">
     <head>
-        <meta charset="utf-8" />
+        <meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta name="description" content="Mead Well">
 
         <title>Mead Well</title>
 
+        <link rel="stylesheet" type="text/less" href="static/css/style.css">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cinzel|Roboto|Open+Sans|Lato">
         <link rel="stylesheet" type="text/less" href="static/css/normalize.css">
         <link rel="stylesheet" type="text/less" href="static/css/layout.less">
@@ -14,6 +15,9 @@
         <link rel="stylesheet" type="text/less" href="static/css/sections.less">
         <link rel="stylesheet" type="text/less" href="static/css/page-specific.less">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+
+        <script type="text/javascript" src="static/js/less.min.js"></script>
+        <script type="text/javascript" src="static/js/scripts.js"></script>
         
         <!-- Bootstrap CSS and JS dependencies -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -22,40 +26,79 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
         <!-- End Bootstrap CSS and JS dependencies -->
 
-        <script type="text/javascript" src="static/js/less.min.js"></script>
-        <script type="text/javascript" src="static/js/scripts.js"></script>
+        <!-- Age Verification dependencies -->
+        <script src="jquery.min.js"></script>
+        <link rel="stylesheet" href="src/agecheck.css">
+        <script src="src/jquery.agecheck.js"></script>
+        <!-- End Age Verification dependencies -->
+
+        <!-- Perform Age Verification -->
+        <script>
+            $(document).ready(function() {
+                $.ageCheck()
+            })
+        </script>
+        <!-- End Perform Age Verification -->
+
     </head>
 
     <body id="index">
-        <header class="header" data-header>
-            <div class="wrapper">
-                <nav class="nav--primary">
-                    <ul>
-                        <li class="nav-item">
-                            <a class="nav-link" href="store.html">Store</a>
-                        </li>
-                    </ul>
-                </nav>
-                <a class="logo" href="/">
+
+        <!-------- Nav Bar -------->
+        <nav class="navbar navbar-expand-xl sticky-top navbar-light bg-light">
+
+            <div class="mx-auto order-0">
+                <a class="logo navbar-brand ml-0px" href="index.html">
                     <img src="static/images/logo.png" height=40 alt="">
                 </a>
-                <nav class="nav--secondary">
-                    <ul>
-                        <li class="nav-item">
-                            <!--<a class="nav-link" href="#">Cart</a>-->
-                        </li>
-                    </ul>
-                </nav>
+                <button class="navbar-toggler mr-0px" type="button" data-toggle="collapse" data-target=".dual-collapse2">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
             </div>
-        </header>
 
+            <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+                <ul class="navbar-nav ml-auto pull-down">
+                    <li class="nav-item">
+                        <a class="nav-link" href="mead.html">OUR MEAD</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">ABOUT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="visit.html">VISIT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="events.html">EVENTS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">CONTACT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="shop.html">SHOP</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/">|</a>
+                    </li>
+                    <li class="nav-item">
+                        
+                        <a class="nav-link" href="prospector-society.html">
+                            <img src="key-narrow.png" height="19px" width="50px">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </nav>
+        <!-------- End Nav Bar -------->
+
+        <!-------- Header Section -------->
         <section class="section section--hero">
             <div class="hero">
                 <div class="hero--content">
                     <div class="wrapper">
                         <h2>First Meadery in Philadelphia</h2>
                         <p>A tavern was built at the site, and the honey was transformed into a rich, golden mead that delighted everyone who drank it</p>
-                        <a href="/store.html" class="button">shop mead</a>
+                        <a href="/mead.html" class="button">shop mead</a>
                     </div>
                 </div>
                 <div class="hero--image">
@@ -75,19 +118,24 @@
                 </div>
             </div>
         </section>
+        <!-------- End Header Section -------->
 
+        <!-------- About Us Section -------->
         <section class="section section--about-us">
             <div class="about-us">
                 <div class="about-us--content">
                     <div class="wrapper">
                         <h2>A must-read story</h2>
-                        <p>When the oil rush struck Pennsylvania in 1863, one of the prospectors from Philadelphia decided to search for the oil in his hometown instead of traveling to Northwestern Pennsylvania.
+                        <p>When the oil rush struck Pennsylvania in 1863, a prospector from Philadelphia decided to search for oil in his hometown rather than travel to Northwestern Pennsylvania
                         <br>
                         <br>
-                            He didn't strike oil but he found something way more interesting. He and his family deside to hide the well and keept in in secret for 150 years
+                            He didn't strike oil but instead found something far more interesting--honey. He and his family took from the source and
+                            transformed it into rich, golden mead, but the existence of the well or drink would remain a family secret for over 150
+                            years.
                         <br>
                         <br>
-                            And only in 2018, his descendants can finally introduce this delicious drink to the world. And drink made from honey, extracted from the honey well located under Philadelphia.
+                            Only in 2018 did his descendants finally introduce this delicious drink to the world; A drink made from honey, extracted
+                            from the family's secret well in Philadelphia.
                         </p>
                     </div>
                 </div>
@@ -111,14 +159,15 @@
                         </div>
                     </div>
                 </div>
-
             </div>
         </section>
+        <!-------- End About Us Section -------->
 
+        <!-------- Product List Section -------->
         <section class="section section--product-list">
             <div class="wrapper">
                 <h2>Try our mead </h2>
-                <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                <div></div>
                 <div class="product-container">
                     <div class="product-item">
                         <img src="static/images/product-storm-delight.png" alt="">
@@ -136,10 +185,12 @@
                         <div class="product-item--description">mead with pomegranate</div>
                     </div>
                 </div>
-                <a href="/store.html" class="button">See all products</a>
+                <a href="/mead.html" class="button">See all products</a>
             </div>
         </section>
+        <!-------- End Product List Section -------->
 
+        <!-------- Visit Us Section -------->
         <section class="section section--visit-us">
             <div class="visit-us">
                 <div class="visit-us--content">
@@ -166,76 +217,80 @@
                 </div>
             </div>
         </section>
+        <!-------- End Visit Us Section -------->
 
-        <section class="section section--newsletter">
-            <div class="newsletter">
-                <div class="newsletter--content">
-                    <div class="wrapper">
-                        <h3>Newsletter</h3>
-                        <p>Sign up to receive 15% off your first purchase</p>
-                        <!-- Begin MailChimp Signup Form -->
-                        <div id="mc_embed_signup">
-                            <form action="https://phillymead.us17.list-manage.com/subscribe/post?u=ef28d6427fbc453568115e9ce&amp;id=42f41e3462" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-                                <div id="mc_embed_signup_scroll">
-                                    <div class="mc-field-group">
-                                        <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
-                                        <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
-                                    </div>
-                                    <div id="mce-responses" class="clear">
-                                        <div class="response" id="mce-error-response" style="display:none"></div>
-                                        <div class="response" id="mce-success-response" style="display:none"></div>
-                                    </div>
-                                    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-                                    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_7c9f1d3f13c764e19bfc11e65_792ed21fe4" tabindex="-1" value=""></div>
-                                </div>
-                            </form>
-                        </div>
-                        <!--End mc_embed_signup-->
+        <!-------- Actions Section -------->
+        <section class="section footer-banner">
+            <br><br>
+            <div class="container">
+                <div class="row">
+                    <div class = "col-sm footer-banner-links">
+                        <h3>LOCATION</h3>
+                        <br>
+                        3525 I Steet, Unit #201
+                        <br>
+                        Philadelphia, PA 19134
+                        <br><br>
+                        (267) 454-5956
+                        <br>
+                        <a href="mailto:hello@phillymead.com">Hello@PhillyMead.com</a>
                     </div>
-                </div>
-                <div class="newsletter--image">
-                    <div class="newsletter--image-container">
-                        <img src="static/images/section-newsletter.png" alt="">
-                        <div class="animation-container animation-container--balloon">
-                            <img src="static/images/section-newsletter-balloon.png">
+                    <div class="col-sm footer-banner-links">
+                        <h3>MORE</h3>
+                        <br>
+                        <a href = "#">Sell Our Mead</a>
+                        <br>
+                        <a href = "#">Detailed Map</a>
+                        <br>
+                        <a href= "#">Careers</a>
+                        <br>
+                        <a href="#">FAQ</a>
+                    </div>
+                    <div class="col-sm">
+                        <h3>GET SOCIAL</h3>
+                        <br>
+                        <div class="mx-auto">
+                            <a href="https://www.instagram.com/mead.well/" target="_blank">
+                                <img src="static/images/instagram.png" alt="">
+                            </a>
+                        
+                            <a href="https://www.facebook.com/Philadelphia-Mead-Well-119688815320259/" target="_blank"
+                                style="padding-left: 15%">
+                                <img src="static/images/facebook.png" alt="">
+                            </a>
                         </div>
-                        <div class="animation-container animation-container--tree-branch">
-                            <img src="static/images/section-newsletter-tree-branch.png">
-                        </div>
+                        
+                    </div>
+                    <div class="col-sm">
+                        <h3>KEEP IN TOUCH</h3>
+                        <br>
+                        <input type = "text" placeholder="enter e-mail here">
+                        <br>
+                        <a href="#" class="button">SIGN UP</a>
                     </div>
                 </div>
             </div>
+            <br><br>
         </section>
+        <!-------- End Actions Section -------->
 
-        <!-- VinoShipper Wine List Integration -->
-            <div id="vs-winelist"></div>
-            <script type="text/javascript">
-                var vsDisableResize = false;
-                var vsCssUrl = "";
-                var vsWineryId = 1890;
-            </script>
-            <script src="https://vinoshipper.com/iframe/v3/injector.js"></script>
-        <!-- End VinoShipper Wine List Integration  -->
-
-        <footer>
-            <div class="footer--social">
-                <ul>
-                    <li>
-                        <a href="https://www.instagram.com/mead.well/" target="_blank">
-                            <img src="static/images/instagram.png" alt="">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.facebook.com/Philadelphia-Mead-Well-119688815320259/" target="_blank">
-                            <img src="static/images/facebook.png" alt="">
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <div class="footer--copyright">
-                <div>© 2019 Philadelphia Mead Well Inc. All Rights Reserved</div>
-            </div>
+        <!-------- Footer -------->
+        <footer class="page-footer container-fluid font-small blue pt-4 mx-auto">
+                <div class = "col-12 custom-footer">
+                    © 2019 Philadelphia Mead Well Inc. All Rights Reserved
+                </div>
         </footer>
+        <!-------- End Footer -------->
+
+        <!-------- VinoShipper Wine List Integration -------->
+        <div id="vs-winelist"></div>
+        <script type="text/javascript">
+            var vsDisableResize = false;
+            var vsCssUrl = "";
+            var vsWineryId = 1890;
+        </script>
+        <script src="https://vinoshipper.com/iframe/v3/injector.js"></script>
+        <!-------- End VinoShipper Wine List Integration  -------->
 
     </body>
 </html>
