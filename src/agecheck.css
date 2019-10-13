@@ -16,29 +16,39 @@
 .ac-container {
     box-sizing: border-box;
     font-family: 'Cinzel', serif;
-    width: 360px;
+    width: 600px;
     position: fixed;
-    padding: 20px 20px 30px 20px;
     background: #fff;
+    background-image: url("../static/images/agecheck.png");
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height:430px;
     z-index: 99999;
     opacity:0;
     text-align:center;
-    border-radius: 4px;
+    border-radius: 0px;
     box-shadow:0px 0px 5px #000;
     font-weight:normal;
+}
+
+.ac-wrapper {
+    display:block;
+    padding: 50px 50px;
+    width: 75%;
+    height: 100%;
 }
 .ac-container h2 {
     box-sizing: border-box;
     margin:0 0 14px 0;
+    margin-top: 30%;
     font-size:26px;
-    border-bottom:1px dashed #ccc;
     padding-bottom:11px;
 }
 .ac-container h3 {
     box-sizing: border-box;
-    color:#21ba21;
     margin-bottom:5px;
-    margin-top:15px;
+    margin-top:30%;
     font-size:26px;
 }
 .ac-container p {
@@ -55,7 +65,7 @@
 .ac-container select, 
 .ac-container input {
     box-sizing: border-box;
-    color:#555;
+    color:#787975;
     padding: 5px 10px;
     font-size: 12px;
     line-height: 1.5;
@@ -100,13 +110,13 @@
     font-size: 12px;
     line-height: 1.5;
     width: 84px;
-    background:lightslategrey;
+    background:#787975;
     color:#fff; 
 
 }
-.ac-container button:hover{
+.ac-container input:hover{
     box-sizing: border-box;
-    background:#82A711;
+    background:#5a7348;
 }
 .ac-container .errors  {
     box-sizing: border-box;
