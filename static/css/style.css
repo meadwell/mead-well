@@ -79,3 +79,7 @@ input[type=email] {
     padding-left: 5px;
     padding-right: 5px;
 }
+
+nav.navbar {
+    background: #efefe9 !important;
+}
