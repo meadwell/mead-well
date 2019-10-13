@@ -16,32 +16,31 @@
 .ac-container {
     box-sizing: border-box;
     font-family: 'Cinzel', serif;
-    width: 600px;
     position: fixed;
-    background: #fff;
+    background: #c1cecf;
     background-image: url("../static/images/agecheck.png");
-    background-size:cover;
+    background-size:contain;
     background-position: center;
     background-repeat: no-repeat;
-    height:430px;
     z-index: 99999;
     opacity:0;
     text-align:center;
     border-radius: 0px;
-    box-shadow:0px 0px 5px #000;
     font-weight:normal;
+    padding-right: 10px;
+    padding-left: 10px;
+    min-height: 300px;
+
 }
 
 .ac-wrapper {
     display:block;
-    padding: 50px 50px;
     width: 75%;
     height: 100%;
 }
 .ac-container h2 {
     box-sizing: border-box;
-    margin:0 0 14px 0;
-    margin-top: 30%;
+    margin-top:40px;
     font-size:26px;
     padding-bottom:11px;
 }
@@ -161,6 +160,14 @@
         width:auto;
         margin-right:20px;
         margin-left:1px;
+        height: 0;
+        min-height: 220px;
+    }
+    input#yes{
+        margin-bottom: 25px;
+    }
+    input#no{
+        margin-bottom: 25px;
     }
     .ac-container select, 
     .ac-container input.day, 
