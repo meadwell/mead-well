@@ -13,14 +13,14 @@
     const settings = $.extend({
       redirectTo: 'index.html',
       redirectOnFail: 'index.html',
-      title: 'Age Verification',
-      copy: 'Are you at least 21 years of age?',
+      title: 'Are you of legal drinking age?',
+      copy: '',
       success: null,
       successMsg: {
-        header: "You're in!",
-        body: 'Opening the doors...'
+        header: "Proceed...",
+        body: ''
       },
-      underAgeMsg: "The Doors are Closed...",
+      underAgeMsg: "Nice try, shortie.",
       underAge: null,
       storage: 'sessionStorage',
       storageExpires: null,
@@ -63,10 +63,11 @@
         let html = '';
         html += '<div class="ac-overlay"></div>';
         html += '<div class="ac-container">';
+        html += '<div class="ac-wrapper">';
         html += `<h2>${settings.title}</h2>`;
         html += `<p>${copy.replace('[21]', `<strong>${settings.minAge}</strong>`)}` + '</p>';
         html += '<div class="errors"></div>';
-        html += '<input id="yes" type="submit" name="yes" value="Yes" style="background-color:#21ba21;"/>';
+        html += '<input id="yes" type="submit" name="yes" value="Yes" ;"/>';
         html += '<input id="no" type="submit" name="no" value="No"/>';
         html += '</div></div>';
 
@@ -113,11 +114,11 @@
       },
 
       handleSuccess() {
-        const successMsg = `<h3>${settings.successMsg.header}</h3><p>${settings.successMsg.body}</p>`;
+        const successMsg = `<div class="ac-wrapper"><h3>${settings.successMsg.header}</h3><p>${settings.successMsg.body}</p></div>`;
         $('.ac-container').html(successMsg);
         setTimeout(() => {
           $('.ac-container').animate({
-            top: '-350px',
+            top: '-450px',
           }, 200, () => {
             $('.ac-overlay').animate({
               opacity: '0',
@@ -136,7 +137,7 @@
       },
 
       handleUnderAge() {
-        const underAgeMsg = `<h3 style="color:black;">${settings.underAgeMsg}</h3>`;
+        const underAgeMsg = `<div class="ac-wrapper"><h3 style="color:black;">${settings.underAgeMsg}</h3></div>`;
         $('.ac-container').html(underAgeMsg);
         if (settings.redirectOnFail !== '') {
           setTimeout(() => {
