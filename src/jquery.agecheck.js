@@ -114,7 +114,7 @@
       },
 
       handleSuccess() {
-        const successMsg = `<div class="ac-wrapper"><h3>${settings.successMsg.header}</h3><p>${settings.successMsg.body}</p></div>`;
+        const successMsg = `<div class="ac-wrapper"><h2>${settings.successMsg.header}</h2><p>${settings.successMsg.body}</p></div></div>`;
         $('.ac-container').html(successMsg);
         setTimeout(() => {
           $('.ac-container').animate({
@@ -137,7 +137,7 @@
       },
 
       handleUnderAge() {
-        const underAgeMsg = `<div class="ac-wrapper"><h3 style="color:black;">${settings.underAgeMsg}</h3></div>`;
+        const underAgeMsg = `<div class="ac-wrapper"><h2 style="color:black;">${settings.underAgeMsg}</h2></div></div>`;
         $('.ac-container').html(underAgeMsg);
         if (settings.redirectOnFail !== '') {
           setTimeout(() => {
@@ -174,6 +174,7 @@
       setTimeout(() => {
         _this.reCenter($('.ac-container'));
       }, 500);
-    });
+    }
+  );
   };
 }(jQuery));
