@@ -38,6 +38,8 @@
 
     <!-- fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cinzel|Roboto|Open+Sans|Lato">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Calibri:400,700,400italic,700italic">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cambria:400,700,400italic,700italic">
 
     <!-- age verification -->
 
