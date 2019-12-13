@@ -15,7 +15,6 @@
 
         gtag('config', 'UA-151988676-1');
         gtag('set', {'user_id': 'USER_ID'}); // Set the user ID using signed-in user_id.
-        ga('set', 'userId', 'USER_ID'); // Set the user ID using signed-in user_id.
 
     </script>
     <meta charset="utf-8" />
@@ -39,6 +38,8 @@
 
     <!-- fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cinzel|Roboto|Open+Sans|Lato">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Calibri:400,700,400italic,700italic">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cambria:400,700,400italic,700italic">
 
     <!-- age verification -->
 
