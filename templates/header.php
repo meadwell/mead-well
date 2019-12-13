@@ -2,6 +2,22 @@
 <html lang="en">
 
 <head>
+    <!--GOOGLE ANALYTICS -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-151988676-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-151988676-1');
+        gtag('set', {'user_id': 'USER_ID'}); // Set the user ID using signed-in user_id.
+        ga('set', 'userId', 'USER_ID'); // Set the user ID using signed-in user_id.
+
+    </script>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Mead Well">
@@ -81,9 +97,11 @@
             width: auto;
             fill: inherit;
         }
+
         svg {
-            fill: black;   
+            fill: black;
         }
+
         svg:hover {
             fill: darkgoldenrod;
         }
@@ -127,7 +145,7 @@
             text-rendering: optimizeLegibility;
             color: black;
             padding: 6px;
-            
+
         }
 
         menu li a:hover {

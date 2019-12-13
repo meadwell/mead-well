@@ -1,0 +1,17 @@
+body, .wine-card {
+    font-family: "Lato",sans-serif;
+    background-color:none;
+    border: none;
+    border-radius: none;
+    font-size: initial;
+    color: initial;
+}
+
+iframe {
+    height: 90%;
+}
+
+.wine-info .wine-detail {
+    padding-bottom: 15 px;
+    color: initial;
+}
