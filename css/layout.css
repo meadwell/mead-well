@@ -2,8 +2,8 @@ html,
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Lato', 'Raleway', sans-serif;
-    font-size: 16px;
+    font-family: 'Calibri','Lato', 'Raleway', sans-serif;
+    font-size: 18px;
     line-height: 1.6em;
     display: flex;
     flex-direction: column;
