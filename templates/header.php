@@ -30,7 +30,7 @@
     <link rel="manifest" href="/img/site.webmanifest">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="/css/sections.css">
+    <link rel="stylesheet" href="/css/sections-min.css">
     <link rel="stylesheet" href="/css/style-min.css">
     <link rel="stylesheet" href="/css/components-min.css">
     <link rel="stylesheet" href="/css/layout-min.css">
