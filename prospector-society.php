@@ -34,8 +34,12 @@
                 /* Call 'checkPswd' when the 'Enter' key is released. */
                 pswd.onkeyup = function (e) {
                     if (e.which == 13) {
-                        window.alert("Invalid password.")
+                        if(pswd.value=="notsecure"){
+                            window.location.replace("https://phillymead.com/admin/cellcount.php");
+
+                        } else {window.alert("Invalid password.");
                     }
+                }
                 };
             </script>
         </div>
