@@ -499,6 +499,10 @@
     .section--about-us .about-us .about-us--image img {
         width: 100%;
     }
+    #visit {
+        order: 2;
+    }
+    
 }
 
 @media (max-width: 480px) {
@@ -508,6 +512,7 @@
     .section--about-us .about-us .about-us--content .wrapper h2 {
         font-size: 48px;
     }
+    
 }
 
 .section--product-list {

@@ -718,7 +718,11 @@
     display: block;
     padding: 0; }
   .section--about-us .about-us .about-us--image img {
-    width: 100%; } }
+    width: 100%; }
+  #visit {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2; } }
 
 @media (max-width: 480px) {
   .section--about-us .about-us .about-us--content .wrapper {
