@@ -15,7 +15,7 @@
                             <br> Philadelphia, PA 19134</a></div>
                 <br>
                 <h5>Phone number:</h5>
-                <phone>(267) 454-5956</phone>
+                <phone><a href="tel:(267) 454-5956">(267) 454-5956</a></phone>
                 <br>
                 <br>
                 <h5>Email:</h5>
@@ -41,7 +41,7 @@
                     <br><a href="https://www.google.com/maps/place/Philadelphia+Mead+Well/@40.001769,-75.1101337,17z/data=!4m5!3m4!1s0x89c6b7d290940a31:0x3401d9bae39fcd5c!8m2!3d40.0017443!4d-75.1097714" target="_blank"> 3525 I Steet, Unit #201
                 <br> Philadelphia, PA 19134</a>
                     <br>
-                    <br> (267) 454-5956
+                    <br> <a href="tel:(267) 454-5956">(267) 454-5956</a>
                     <br>
                     <a href="mailto:hello@phillymead.com">Hello@PhillyMead.com</a>
                 </div>
@@ -115,7 +115,7 @@
 
     <br>
     <div class="custom-footer">
-        © 2019 Philadelphia Mead Well Inc. All Rights Reserved
+        © 2020 Philadelphia Mead Well Inc. All Rights Reserved
     </div>
     </div>
 

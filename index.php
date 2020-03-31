@@ -20,6 +20,8 @@
             <div class="animation-container animation-container--balloon-blue">
                 <img src="../img/section-hero-balloon-blue.png" alt="baloon, blue">
             </div>
+            <img class="covid19" src="../img/hero-covid19.png" alt="masks">
+
             <div class="animation-container animation-container--balloon-red">
                 <img src="../img/section-hero-balloon-red.png" alt="balloon, red">
             </div>
@@ -58,9 +60,14 @@
                     <img src="../img/section-about-us-bell.png" alt="bell">
                 </div>
                 <div class="animation-container animation-container--kite">
-                    <img src="../img/section-about-us-kite.png" alt="kite" >
+                    <img src="../img/section-about-us-kite.png" alt="kite">
                 </div>
 
+
+                
+                <div class="animation-container covid19"> 
+                    <img  src="../img/covid19.png" alt="masks">
+                </div>
                 <div class="animation-container animation-container--blink">
                     <img src="../img/section-about-us-blink.png" alt="eyelid">
                 </div>

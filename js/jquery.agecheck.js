@@ -12,7 +12,7 @@
   $.ageCheck = function (options) {
     const settings = $.extend({
       redirectTo: '/',
-      redirectOnFail: '/',
+      redirectOnFail: 'https://www.cdc.gov/alcohol/fact-sheets/minimum-legal-drinking-age.htm',
       title: 'Are you of legal drinking age?',
       copy: '',
       success: null,
