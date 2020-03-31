@@ -107,7 +107,9 @@ a.button.ghost-button, button.ghost-button {
     color: initial; 
     background-color: #fff;
 }
-
+#vs-injected-div {
+    display: none;
+}
 .cart-quantity {
     margin: 5px 0 -8px;
     color: #3f3633;

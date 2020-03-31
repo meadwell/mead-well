@@ -306,6 +306,13 @@
       -ms-flex-pack: end;
           justify-content: flex-end; }
 
+.covid19 {
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  position: absolute; }
+
 .section--about-us .about-us .about-us--image .about-us--image-container {
   position: relative; }
 
