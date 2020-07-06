@@ -58,6 +58,33 @@
 </head>
 
 <body>
+    <div id="cobwebs">
+        <div class="notice">
+        <p>It is with great sadness that we must announce the drying-up of our primary honey well, and the <h1>closing of Philadelphia Mead Well as a result.</h1></p><p> We currently have prospectors hard at work surveying the land in search of another honey well and hope to re-open in a few years if our prospectors can find another location suitable for drilling.</p><br>
+            <p>If you would like to be notified when we strike honey, please enter your email: 
+                <div id="mc_embed_signup">
+                        <form action="https://phillymead.us17.list-manage.com/subscribe/post?u=ef28d6427fbc453568115e9ce&amp;id=42f41e3462" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                            <div id="mc_embed_signup_scroll">
+                                <div class="mc-field-group">
+                                    <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="ben@foundingfathers.com">
+                                    <input type="submit" class="button" value="Subscribe" name="subscribe" id="mc-embedded-subscribe">
+                                </div>
+                                <div id="mce-responses" class="clear">
+                                    <div class="response" id="mce-error-response" style="display:none"></div>
+                                    <div class="response" id="mce-success-response" style="display:none"></div>
+                                </div>
+                                <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                                <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                                    <input type="text" name="b_7c9f1d3f13c764e19bfc11e65_792ed21fe4" tabindex="-1" value="">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </p>
+        
+        <p style="display:none">If you would like to support our prospectors, please feel free to donate to their search here:</p>
+        </div>
+    </div>
     <nav>
         <a href="/" class="img"><img src="/img/PMW.svg" id="logo" ></a>
         <a id="menu-pulley-link" onclick="toggleMenu()" class="img">
@@ -199,4 +226,9 @@
             document.getElementsByTagName("menu")[0].classList.toggle("open");
         }
 
+        
+        function addEmail() {
+            var email = document.getElementById("emailinput").value;
+            console.log("email: " + email);
+        }
     </script>
