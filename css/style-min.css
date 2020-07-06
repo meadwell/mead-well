@@ -46,3 +46,48 @@ input[type=email] {
 img.aboutus {
   height: 500px;
   display: inline; }
+
+#cobwebs {
+  background: #000000c4;
+  height: 100vh;
+  width: 100vw;
+  /* position: fixed; */
+  top: 0px;
+  position: fixed;
+  z-index: 999;
+  background-image: url(/img/cobweb-3.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  overflow: hidden; }
+
+#cobwebs .notice {
+  width: 500px;
+  color: whitesmoke;
+  margin: 15% auto;
+  background: transparent;
+  text-align: center; }
+
+#cobwebs .notifyme {
+  background: #ebebeb;
+  color: #000000c4;
+  width: 240px;
+  height: 36px;
+  border: 1px solid #3f3633;
+  border-radius: 1px;
+  box-shadow: 0 0 1px 0 grey;
+  margin: 5px; }
+
+.notifyme::-webkit-input-placeholder {
+  color: #00000082; }
+
+.notifyme::-moz-placeholder {
+  color: #00000082; }
+
+.notifyme:-ms-input-placeholder {
+  color: #00000082; }
+
+.notifyme::-ms-input-placeholder {
+  color: #00000082; }
+
+.notifyme::placeholder {
+  color: #00000082; }
